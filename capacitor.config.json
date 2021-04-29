@@ -1,0 +1,26 @@
+{
+  "appId": "com.greek.chat",
+  "appName": "new-GR-Chat",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "linuxAndroidStudioPath": "/home/s/Downloads/android-studio/android-studio/bin/studio.sh",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {
+    "preferences": {
+      "ScrollEnabled": "false",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "false",
+      "AndroidXEnabled": "true",
+      "android-minSdkVersion": "22",
+      "SplashScreen": "screen",
+      "SplashScreenDelay": "3000"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.itemCSS{
+    --background: transparent;
+    background-image: linear-gradient(90deg, rgb(19, 153, 194) 0%, rgb(12, 108, 146) 50%, rgb(12, 78, 141) 100%);
+}
+
+// ion-icon {
+//    color: white;
+// }
+
+
+.button_cancel {
+  color: #313e50;
+  background: transparent;
+}
+.transparent {
+  background-color: transparent;
+}
+
+.swiper-slide img {
+  height: 300px;
+}
+
+// img {
+//   height: 200px;
+//   width: 100%;
+// }
+
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg,
+.swiper-zoom-container > canvas {
+  object-fit: cover;
+}
+
+
+
+button {
+  background-color: transparent !important;
+}
+
+.content {
+  --offset-bottom: 0px !important;
+}
+
+.date {
+  float: inline-end;
+  font-size: 12px;
+}
+
+.rowMain {
+  margin-bottom: 10px;
+}
+
+.onlineOffline_icon {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  // background-color: ;
+  border-radius: 50%;
+  // bottom: 0.2em;
+  right: 0;
+  border: 1.5px solid black;
+  background: green;
+}
+
+ion-row {
+  // top: 9%;
+
+  ion-card {
+    width: 100% !important;
+    margin: 0 !important;
+    height: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.myCard {
+  position: relative;
+}
+
+.myOverlay {
+  width: 100%;
+  // height: 60px;
+  position: absolute;
+  z-index: 99;
+  bottom: 0px;
+  opacity: 0.5;
+  // background: #000;
+  color: #fff;
+
+  --padding-end: 0;
+
+  // --inner-padding-start: 0;
+  --inner-padding-end: 0;
+
+  --min-height: 0;
+}
+
+.subtitle {
+  //position: absolute;
+  height: 15px;
+  width: 15px;
+  // background-color: ;
+  border-radius: 50%;
+  // bottom: 0.2em;
+  right: 0;
+  border: 1.5px solid black;
+  background: green;
+}
+
+.card-title {
+  margin: 0;
+  color: black ;
+}
+

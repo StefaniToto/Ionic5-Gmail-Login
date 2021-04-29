@@ -1,0 +1,8 @@
+{
+  "name": "capacitorAppChat",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

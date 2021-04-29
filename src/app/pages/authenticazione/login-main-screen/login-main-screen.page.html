@@ -1,0 +1,88 @@
+<ion-content padding>
+  <ion-grid class="gridImg">
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+     
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-item class="gridLabel" (click)="connectWithGoogle()">
+      <ion-button fill="outline" expand="full" class="btnIon" slot="start">
+        <ion-icon
+          style="zoom: 2"
+          class="IconBtn"
+          icon="../../../../assets/imgs/auth/icons8-google.svg"
+        ></ion-icon>
+      </ion-button>
+      <ion-label class="labelText gooleText"> Log in with Google</ion-label>
+    </ion-item>
+    <ion-label class="h5 gridLabel">Other login options</ion-label>
+  </ion-grid>
+</ion-content>
+<ion-footer
+  class="ion-no-border"
+  style="position: absolute; left: 0; bottom: 0; right: 0"
+>
+  <!-- <ion-item lines="none" class="light gridLabel"> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item  (click)="connectWithGoogle()">
+          <ion-button fill="outline" expand="full" class="btnIon btnIon2" slot="start">
+            <ion-icon
+              style="zoom: 2"
+              class="IconBtn"
+              icon="../../../../assets/imgs/auth/fb.svg"
+            ></ion-icon>
+          </ion-button>
+          <ion-label class="gooleText2"> Log in with Facebook</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item  (click)="connectWithEmail()">
+          <ion-button fill="outline" expand="full" class=" btnIon btnIon2" slot="start">
+            <ion-icon
+              style="zoom: 2"
+              class="IconBtn"
+              icon="../../../../assets/imgs/auth/email.svg"
+            ></ion-icon>
+          </ion-button>
+          <ion-label class="gooleText2"> SignUp</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
+        <ion-col size="3">
+          <ion-button fill="outline" expand="full" class="btnIon" (click)="connectWithMobile()">
+            <ion-icon class="IconBtn" icon="../../../../assets/imgs/auth/phone-call.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button fill="outline" expand="full" class="btnIon" (click)="connectWithFb()">
+            <ion-icon class="IconBtn" icon="../../../../assets/imgs/auth/fb.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button fill="outline" expand="full" class="btnIon" (click)="connectWithEmail($event)">
+            <ion-icon class="IconBtn" icon="../../../../assets/imgs/auth/email.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button fill="outline" expand="full" class="btnIon" (click)="connectWithIphone()">
+            <ion-icon class="IconBtn" icon="../../../../assets/imgs/auth/apple.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row> -->
+  </ion-grid>
+  <!-- </ion-item> -->
+  <ion-toolbar>
+    <ion-item class="footer" lines="none">
+      <ion-label style="white-space: break-spaces !important"
+        >By logging in, you are agreeing to our Terms of Use and Privacy
+        Policy</ion-label
+      >
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

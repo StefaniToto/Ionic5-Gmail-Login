@@ -1,0 +1,31 @@
+
+<ion-app>
+  <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+      <ion-content class="menuBar">
+          <ion-item lines="none">
+            <ion-icon class="iconMain" small item-end name="star"></ion-icon>
+            <ion-label class="title ml-2">Rate our app! </ion-label>
+          </ion-item>
+    
+          <!-- <img alt="logo" width="100%" src="../assets/imgs/1.jpg"> -->
+    
+          <ion-list *ngFor="let p of pages">
+            <ion-item (click)="openFirst()" routerLink="/tabs/{{p.path}}" routerLinkActive="on" lines="none">
+              <ion-icon icon="{{p.icon}}" md="{{p.icon}}"></ion-icon>
+              <ion-label class="title ml-2">{{p.title}}</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+    </ion-menu>
+<app-home></app-home>
+<ion-router-outlet id="main"></ion-router-outlet>
+</ion-app> 
+
+
+
+
+    
+
+
+
+

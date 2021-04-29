@@ -1,0 +1,45 @@
+
+  
+.button_cancel {
+    color: #313e50;
+    background: transparent;
+  }
+  .transparent {
+    background-color: transparent;
+  }
+  
+  .swiper-slide img {
+    height: 300px;
+  }
+  
+  img {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .swiper-zoom-container > img, .swiper-zoom-container > svg, .swiper-zoom-container > canvas {
+  
+    object-fit: cover;
+  }
+  
+  ion-label {
+    color: black !important;
+  }
+  
+  
+  button {
+    background-color: transparent !important;
+  }
+  
+  .content {
+    --offset-bottom: 0px !important;
+  }
+  
+  .date {
+    float: inline-end;
+    font-size: 12px;
+  }
+  
+  .rowMain{
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons *ngIf="!openMenu" slot="start" (click)="openFirst()">
+      <ion-menu-button autoHide="false"><img [className]="setclassName" src='../assets/imgs/bars-solid.svg'>
+      </ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons *ngIf="openMenu" slot="start" (click)="openFirst()">
+      <ion-menu-button autoHide="false"><img [className]="setclassName" src='../assets/imgs/backBtn.svg'>
+      </ion-menu-button>
+    </ion-buttons>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col class="maincol" size="9">
+          <ion-label>Meet People {{title}}</ion-label>
+        
+        </ion-col>
+        <ion-col>
+          <ion-icon style="zoom:1.2;"  icon="../assets/imgs/mainPage/notification.svg"></ion-icon>            
+          <ion-badge color="danger">9</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+

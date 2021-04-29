@@ -1,0 +1,129 @@
+<ion-header>
+
+  <ion-toolbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>SignUp Or Recover Pass</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <div class="imgholder" text-center>
+    <img [src]="avatarimage" alt="">
+  </div>
+  <div class="signcard" text-center>
+
+    <ion-segment [(ngModel)]="signform">
+      <ion-segment-button (click)="changeAvatar()" class="segbtn1" value="login">
+        Mobile
+      </ion-segment-button>
+      <ion-segment-button (click)="changeAvatar()" class="segbtn2" value="signup">
+        Email
+      </ion-segment-button>
+    </ion-segment>
+
+
+    <div class="loginform" [ngSwitch]="signform">
+      <div padding *ngSwitchCase="'login'">
+        <ion-item class="light">
+      
+          <ion-select [ngStyle]="{'background-image': 'url(assets/currency/'+selectedcurrency+'.png)',
+          'background-repeat':'no-repeat'
+        }" class="coin-select"
+            (click)="loadcurrency()" [(ngModel)]="selectedcurrency">
+            <ion-select-option class="select-test" *ngFor="let currency of currencies" value="{{currency.name}}">{{currency.capital}}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      
+        <ion-item class="light">
+          <ion-input clearInput type="tel" placeholder="Mobile Number" [(ngModel)]="email" maxlength="6">
+          </ion-input>
+        </ion-item>      
+      
+      
+        <ion-row *ngIf="showOTPInput">
+          <ion-col>
+            <ion-input clearInput type="tel" placeholder="Enter code here" [(ngModel)]="OTP" maxlength="6" class="otpinput"
+              padding>
+            </ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="showOTPInput" class="OTP-border">
+          <ion-col>
+            <div>
+              <ion-input name="1" type="tel" [(ngModel)]="OTP[0]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="2" type="tel" [(ngModel)]="OTP[1]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="3" readonly type="tel" [(ngModel)]="OTP[2]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="4" readonly type="tel" [(ngModel)]="OTP[3]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="5" readonly type="tel" [(ngModel)]="OTP[4]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              <ion-input name="6" readonly type="tel" [(ngModel)]="OTP[5]" maxlength="6" class="otpinput" padding-horizontal>
+              </ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="showOTPInput">
+          <ion-col>
+            <ion-text class="small">{{OTPmessage}}</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button *ngIf="!showOTPInput" expand="block" (click)="next()" class="transition">
+              <strong class="white">
+                GET CODE</strong></ion-button>
+            <ion-button *ngIf="showOTPInput" expand="block" (click)="register()" class="transition">
+              <strong class="white">
+            Register  </strong></ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div *ngSwitchCase="'signup'">
+        <div class="detailsholder" padding>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="email" placeholder="abc@def.com"></ion-input>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" placeholder="******"></ion-input>
+        </div>
+
+        <ion-button  expand="block" (click)="register()" class="transition">
+          <strong class="white">
+        Register  </strong></ion-button>
+
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>

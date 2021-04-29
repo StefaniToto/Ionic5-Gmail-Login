@@ -1,0 +1,84 @@
+ion-content {
+  --background: #fff url("../../../../assets/imgs/auth/sfondo_home.png") no-repeat center center / cover;
+  --background-size: cover;
+}
+
+.gridImg {
+  top: 40% ;
+  position: relative;
+}
+
+.gridLabel {
+
+  position: relative;
+}
+
+.h5 {
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 13px;
+}
+
+.h5:before,
+.h5:after {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.h5:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.h5:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.IconBtn {
+  zoom: 3;
+}
+
+.labelText {
+  text-align: center;
+}
+
+.gooleText {
+  margin-right: 75px;
+}
+
+.gooleText2 {
+ font-size: 12px;
+ white-space: inherit !important;;
+}
+
+.footer {
+  font-size: 13px;
+  --ion-item-background: transparent;
+  color: rgb(19, 150, 226);
+  margin: 0 20px 20px 20px;
+}
+
+
+ion-footer {
+  border: 0px !important;
+  border-bottom-color: transparent !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.btnIon2{
+  margin: 10px;
+}

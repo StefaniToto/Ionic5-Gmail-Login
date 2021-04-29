@@ -1,0 +1,51 @@
+
+<ion-content padding>
+  <form [formGroup]="registrationForm" (ngSubmit)="submitRegistration()">
+
+    <ion-item class="light" lines="none">
+      <ion-label>Enter Mobile Number OR Email. 
+      </ion-label>
+    </ion-item>
+
+
+ <ion-item class="light">
+    <ion-input id="firstName" class="form-control" placeholder="Username" formControlName="firstName" type="text" required>
+    </ion-input>
+  </ion-item> 
+
+
+  <ion-item class="light">
+    <ion-input placeholder="Phone Mumber/Email" formControlName="email" type="text" required>
+    </ion-input>
+  </ion-item>
+
+  <p *ngIf="showValidationMSG" style="color: #ea6153;">Please fill a valid email.</p>
+
+
+  <ion-item class="light">
+    <ion-input placeholder="Password" formControlName="password" type="text">
+    </ion-input>
+  </ion-item>
+
+ 
+  <ion-row>
+    <ion-col>      
+      <ion-button expand="block" type="submit" class="transition" [disabled]="!showValidation">
+        <strong class="white">
+      Register  </strong></ion-button>
+    </ion-col>
+  </ion-row>
+
+</form>
+</ion-content>
+<ion-footer>
+
+
+  <ion-list lines="none">
+    <ion-label text-center (click)="closeModal()">Already have an account ?
+      <a routerLink="login-forget"><b>Login here</b> </a> </ion-label>
+    <p text-center> <a routerLink="login-forget"> Forgot Password </a></p>
+  </ion-list>
+
+
+</ion-footer>
